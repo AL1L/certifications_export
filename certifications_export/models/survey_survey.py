@@ -8,7 +8,7 @@ class Survey(models.Model):
 
     expires = fields.Integer(string="Expires In (months)")
 
-    def action_firefly_export(self):
+    def action_certifications_export(self):
         return {
             'type': 'ir.actions.act_url',
             'name': "Export data",
@@ -16,7 +16,7 @@ class Survey(models.Model):
             'url': "/certifications_export/export"
         }
 
-    def action_firefly_export_self(self):
+    def action_certifications_export_self(self):
         return {
             'type': 'ir.actions.act_url',
             'name': "Export data",

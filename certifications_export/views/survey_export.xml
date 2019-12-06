@@ -6,5 +6,5 @@
     <field name="target">new</field>
   </record>
 
-  <menuitem name="Certifications Export" id="website_slides_menu_export_certification" parent="website_slides.website_slides_menu_report" sequence="41" action="firefly_survey_export" />
+  <menuitem name="Certifications Export" id="website_slides_menu_export_certification" parent="website_slides.website_slides_menu_report" sequence="41" action="certifications_export_survey_export" />
 </odoo>
