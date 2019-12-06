@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record model="ir.actions.act_url" id="firefly_survey_export">
+    <field name="name">Certifications Export</field>
+    <field name="url">/firefly/export</field>
+    <field name="target">new</field>
+  </record>
+
+  <menuitem name="Certifications Export" id="website_slides_menu_export_certification" parent="website_slides.website_slides_menu_report" sequence="41" action="firefly_survey_export" />
+</odoo>
