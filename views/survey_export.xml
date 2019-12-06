@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record model="ir.actions.act_url" id="firefly_survey_export">
+  <record model="ir.actions.act_url" id="certifications_export_survey_export">
     <field name="name">Certifications Export</field>
-    <field name="url">/firefly/export</field>
+    <field name="url">/certifications_export/export</field>
     <field name="target">new</field>
   </record>
 

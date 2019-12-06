@@ -12,17 +12,9 @@ from odoo.exceptions import UserError
 from odoo.http import request, content_disposition
 
 
-class Test(http.Controller):
-    @http.route(['/firefly_test/test'], type='json', auth='user', methods=['GET'], website=True)
-    def test(self, fields):
-        return {
-            'foo': 'bar'
-        }
+class CertificationsExport(http.Controller):
 
-
-class FireflyExport(http.Controller):
-
-    @http.route(['/firefly/export'], type='http', auth='user', methods=['GET'], website=True)
+    @http.route(['/certifications_export/export'], type='http', auth='user', methods=['GET'], website=True)
     def csv_download(self, **kw):
         search = []
         certs = []

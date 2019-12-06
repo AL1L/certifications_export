@@ -13,7 +13,7 @@ class Survey(models.Model):
             'type': 'ir.actions.act_url',
             'name': "Export data",
             'target': 'blank',
-            'url': "/firefly/export"
+            'url': "/certifications_export/export"
         }
 
     def action_firefly_export_self(self):
@@ -21,5 +21,5 @@ class Survey(models.Model):
             'type': 'ir.actions.act_url',
             'name': "Export data",
             'target': 'blank',
-            'url': "/firefly/export/?certs=%s" % (self.id)
+            'url': "/certifications_export/export/?certs=%s" % (self.id)
         }
